@@ -27,7 +27,7 @@ class BestHotelAPITest extends TestCase
         $params = array(
             'from_date' => "2021-09-05T10:44:55+03:00",
             'to_date' => "2021-09-05T10:00:00+03:00",
-            'city' => 'AMMAN',
+            'city' => 'AMM',
             'adults' => 2
         );
         $uri = route('availableHotels') . '?' . http_build_query($params);
@@ -43,7 +43,7 @@ class BestHotelAPITest extends TestCase
         $params = array(
             'from_date' => "2021-09-05T10:44:55+03:00",
             'to_date' => "2021-09-05T10:00:00+03:00",
-            'city' => 'AMMAN',
+            'city' => 'AMM',
             'adults' => 2,
             'api_providers' => ['best_hotel']
         );
@@ -60,7 +60,7 @@ class BestHotelAPITest extends TestCase
         $params = array(
             'from_date' => "2021-09-05T10:44:55+03:00",
             'to_date' => "2021-09-05T10:00:00+03:00",
-            'city' => 'AMMAN',
+            'city' => 'AMM',
             'adults' => 2,
             'api_providers' => ['booking']
         );
